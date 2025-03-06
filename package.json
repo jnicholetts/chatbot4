@@ -1,0 +1,16 @@
+{
+  "name": "openai-chatbot",
+  "version": "1.0.0",
+  "description": "A simple Node.js chatbot powered by the OpenAI API",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2",        // Express framework for building the server
+    "body-parser": "^1.20.1",    // Middleware for parsing incoming request bodies
+    "openai": "^3.2.1"           // OpenAI API client for interacting with OpenAI services
+  },
+  "author": "Joshua Nicholetts",
+  "license": "MIT"
+}
