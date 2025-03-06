@@ -42,11 +42,11 @@ app.post('/api/chat', async (req, res) => {
 
     /* 
       Using the OpenAI Chat Completion API:
-      - The 'system' message establishes context tying this conversation to the specific assistant.
-      - The 'user' message is the user's input.
+      - Switch the model to "gpt-4o-mini" for more advanced responses.
+      - Utilize the 'system' message to provide context for the assistant.
     */
     const response = await openai.createChatCompletion({
-      model: "gpt-3.5-turbo", // Chat-based model
+      model: "gpt-4o-mini", // Updated model to gpt-4o-mini for improved responses
       messages: [
         {
           role: "system", 
