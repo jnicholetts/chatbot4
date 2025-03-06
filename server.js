@@ -39,7 +39,7 @@ app.post('/api/chat', async (req, res) => {
 
     // Call OpenAI API to get chat response based on the input
     const response = await openai.createCompletion({
-      model: "text-davinci-003", // Specify your model (update as needed)
+      model: "o3-mini", // Specify your model (update as needed)
       prompt: userInput,
       max_tokens: 150, // Limit the response length
       temperature: 0.7, // Control randomness of output
